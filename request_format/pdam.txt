@@ -1,0 +1,44 @@
+PDAM
+
+Inquiry
+{
+	"clientId": "IBOC",
+	"reffNum": "20170831155454050309",
+	"providerId": "PDAM_BSD",
+	"adminFeeFlag": "0",
+	"pdam_type": "IPL/PAM_BSD",
+	"billingId": "111",
+	"browser_agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36",
+	"ip_address": "172.18.0.69",
+	"id_api": "web",
+	"ip_server": "68",
+	"session": "9271b231b962c63e105004dfe427c4b3"
+}
+
+Payment
+{
+	"kode_mitra": "BNI",
+	"kode_loket": "50309",
+	"kode_cabang": "225",
+	"clientId": "IBOC",
+	"reffNum": "20170831155606050309",
+	"providerId": "PDAM_BSD",
+	"billingId": "111",
+	"customerName": "ATIEK SETYOWATIY",
+	"response": "<billReffNo>111111111111111</billReffNo><description1>201511</description1><description1Byte></description1Byte><description2></description2><description2Byte></description2Byte><description3></description3><description3Byte></description3Byte>",
+	"bl_th": "NOV15",
+	"penalti": "00000000",
+	"namaPerusahaan": "IPL BSD",
+	"kubikasi": "0",
+	"amount": "100000",
+	"adminFee": "2500",
+	"nominalTagihan": "100000",
+	"totalTagihan": "102500",
+	"pin_transaksi": "12345",
+	"accountNum": "115258134",
+	"browser_agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36",
+	"ip_address": "172.18.0.69",
+	"id_api": "web",
+	"ip_server": "68",
+	"session": "9271b231b962c63e105004dfe427c4b3"
+}
