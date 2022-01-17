@@ -1,0 +1,42 @@
+SKYNINDO
+
+Inquiry
+{
+	"reffNum": "20190627134445000005",
+	"customerId": "4567811113333",
+	"packageCode": "101",
+	"providerId": "SKYNINDO",
+	"browser_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36",
+	"ip_address": "10.70.9.89",
+	"id_api": "alcweb01",
+	"ip_server": "68",
+	"req_id": "1561617885314116",
+	"session": "1c6d62ba977090970432c4be8cc4c81b"
+}
+
+Payment
+{
+	"kode_mitra": "IPY",
+	"kode_loket": "00005",
+	"kode_cabang": "014",
+	"reffNum": "20190627134515000005",
+	"providerId": "SKYNINDO",
+	"customerId": "1014567811113333",
+	"packageCode": "101",
+	"customerName": "FAMILY 1 BLN",
+	"penalty": "0",
+	"biaya_loket": "0",
+	"biaya_adm": "0",
+	"billReffNo": "",
+	"billReffNo2": "",
+	"amount": "800000",
+	"loket_totalAmount": 800000,
+	"pin_transaksi": "12345",
+	"accountNum": "114479721",
+	"browser_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36",
+	"ip_address": "10.70.9.89",
+	"id_api": "alcweb01",
+	"ip_server": "68",
+	"req_id": "1561617915848917",
+	"session": "1c6d62ba977090970432c4be8cc4c81b"
+}
