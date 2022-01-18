@@ -1,0 +1,50 @@
+MPNG2
+
+Inquiry
+{
+	"reffNum": "201909111038260100164",
+	"billingId": "115030016764845",
+	"browser_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36",
+	"ip_address": "10.70.9.199",
+	"id_api": "web",
+	"ip_server": "68",
+	"req_id": "1568173106864228",
+	"session": "5629fa0dadac3a27ec7fbc190ff30784"
+}
+
+Payment
+{
+	"kode_mitra": "TLC",
+	"kode_loket": "100164",
+	"kode_cabang": "259",
+	"ket": "Pembayaran MPN G2 - DJP",
+	"reffNum": "201909111038380100164",
+	"h_billingId": "115030016764845",
+	"h_npwp": "021076427077000",
+	"h_nama": "NPWP DUMMY BADAN DUA",
+	"h_alamat": "JL.MESJID IV NO.19,JAKARTA UTARA",
+	"h_akun": "411122",
+	"h_kdJnsSetoran": "100",
+	"h_masaPajak": "03032014",
+	"h_nomorSK": "000000000000000",
+	"h_nop": "900019191818181778",
+	"h_jnsDokumen": "",
+	"h_nmrDokumen": "",
+	"h_tglDokumen": "",
+	"h_kdKpbc": "",
+	"h_kodeKL": "",
+	"h_unitEselon": "",
+	"h_kdSatker": "",
+	"h_currency": "IDR",
+	"c_adminBank": "0",
+	"h_tagihan": "1000000",
+	"c_totalBayar": "1000000",
+	"accountNum": "115222877",
+	"pin_transaksi": "12345",
+	"browser_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36",
+	"ip_address": "10.70.9.199",
+	"id_api": "web",
+	"ip_server": "68",
+	"req_id": "1568173118939741",
+	"session": "5629fa0dadac3a27ec7fbc190ff30784"
+}
