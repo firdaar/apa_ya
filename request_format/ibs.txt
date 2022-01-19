@@ -1,0 +1,49 @@
+IBS
+
+Inquiry
+{
+	"kode_mitra": "BNI",
+	"kode_loket": "100189",
+	"kode_cabang": "259",
+	"reffNum": "202001061326540100189",
+	"billingId": "2019080113540183",
+	"browser_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36",
+	"ip_address": "10.70.9.44",
+	"id_api": "alcweb01",
+	"ip_server": "68",
+	"req_id": "1578292014292005",
+	"session": "c49123a929af116c83e9af28f0bdaf95"
+}
+
+Payment
+{
+	"kode_mitra": "BNI",
+	"kode_loket": "100189",
+	"kode_cabang": "259",
+	"reffNum": "202001061327090100189",
+	"h_billingId": "2019080113540183",
+	"h_billingName": "TEST IBS, PT",
+	"h_channelId": "ATM",
+	"h_billAmount": "2440000",
+	"h_billInfo6": "IBS PELINDO",
+	"h_billInfo71": "111776000287",
+	"h_billInfo72": "111776000286",
+	"h_billInfo73": "111776000285",
+	"h_billInfo74": "111776000284",
+	"h_billInfo75": "111776000283",
+	"h_billInfo76": "111776000282",
+	"h_billInfo77": "111776000281",
+	"h_billInfo78": "111776000280",
+	"h_billInfo79": "111776000279",
+	"h_billInfo710": "111776000278",
+	"c_fee": "1500",
+	"loket_totalBayar": 2441500,
+	"pin_transaksi": "12345",
+	"accountNum": "115222877",
+	"browser_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36",
+	"ip_address": "10.70.9.44",
+	"id_api": "web",
+	"ip_server": "68",
+	"req_id": "1578292029814561",
+	"session": "c49123a929af116c83e9af28f0bdaf95"
+}
