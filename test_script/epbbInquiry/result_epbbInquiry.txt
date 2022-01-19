@@ -1,0 +1,73 @@
+=============================epbbInquiry_test_normal=====================================
+{
+    "error": false,
+    "reffNum": "202002181428440100185",
+    "providerId": "PBB",
+    "billerCode": "",
+    "daerah": "",
+    "amount": 250000,
+    "nop": "510301000100300020",
+    "namaWp": "ANGGRAINI SETI",
+    "tahunPajak": "2016",
+    "jumlahTagihan": 0,
+    "kecamatan": "ABUDI 0000",
+    "alamatWp": "0025000020196353",
+    "fee": 3000,
+    "namaPBB": "PBB Kab. Badung",
+    "total_amount": 255000,
+    "jenisPajakAtauKodya": "",
+    "biaya_loket": "2000",
+    "kodeRekeningPokok": "",
+    "kodeRekeningBunga": "",
+    "kodeRekeningDenda": "",
+    "kodeRekeningSanksi": "",
+    "jumlahPokok": "",
+    "jumlahDenda": "",
+    "jumlahSanksi": "",
+    "ket": "Pembayaran PBB"
+}
+====================epbbInquiry_error_soa==============================================
+{
+    "error": true,
+    "errorNum": "-2",
+    "message": "TRANSAKSI GAGAL : Fee produk tidak tersedia"
+}
+=================================epbbInquiry_session_not_found=============================
+{
+    "code": "66",
+    "reason": "Session tidak ditemukan"
+}
+
+==============================epbbInquiry_session_invalid====================================
+{
+    "code": "66",
+    "reason": "Session invalid"
+}
+===================================epbbInquiry_bypasstest===================================
+{
+    "error": false,
+    "reffNum": "202002181428440100185",
+    "providerId": "PBB",
+    "billerCode": "",
+    "daerah": "",
+    "amount": 250000,
+    "nop": "510301000100300020",
+    "namaWp": "ANGGRAINI SETI",
+    "tahunPajak": "2016",
+    "jumlahTagihan": 0,
+    "kecamatan": "ABUDI 0000",
+    "alamatWp": "0025000020196353",
+    "fee": 3000,
+    "namaPBB": "PBB Kab. Badung",
+    "total_amount": 255000,
+    "jenisPajakAtauKodya": "",
+    "biaya_loket": "2000",
+    "kodeRekeningPokok": "",
+    "kodeRekeningBunga": "",
+    "kodeRekeningDenda": "",
+    "kodeRekeningSanksi": "",
+    "jumlahPokok": "",
+    "jumlahDenda": "",
+    "jumlahSanksi": "",
+    "ket": "Pembayaran PBB"
+}

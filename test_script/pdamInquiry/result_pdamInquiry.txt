@@ -1,0 +1,62 @@
+===================================pdamInquiry_session_not_found============================
+{
+    "code": "66",
+    "reason": "Session tidak ditemukan"
+}
+===========================pdamInquiry_session_invalid====================================
+{
+    "code": "66",
+    "reason": "Session invalid"
+}
+===========================pdamInquiry_test_normal=====================================
+ "error": false,
+    "ket": "PDAM_BANDUNG",
+    "billingId": "011111113",
+    "customerName": "NY.SUCININGSIH",
+    "flag": "02",
+    "billRepeatCount": "1",
+    "kandatelNum": "",
+    "langCode": "1",
+    "billerCode": "1310",
+    "adminFee": "2500",
+    "billDate": [
+        "201205"
+    ],
+    "billAmount": [
+        "000000052345"
+    ],
+    "kubikasi": 0,
+    "amount": 52345,
+    "response": "",
+    "bl_th": "MEI12",
+    "nominalTagihan": 52345,
+    "penalti": 0,
+    "totalTagihan": 54845
+
+===========================pdamInquiry_bypass=============================================
+ "error": false,
+    "ket": "PDAM_BANDUNG",
+    "billingId": "011111113",
+    "customerName": "NY.SUCININGSIH",
+    "flag": "02",
+    "billRepeatCount": "1",
+    "kandatelNum": "",
+    "langCode": "1",
+    "billerCode": "1310",
+    "adminFee": "2500",
+    "billDate": [
+        "201205"
+    ],
+    "billAmount": [
+        "000000052345"
+    ],
+    "kubikasi": 0,
+    "amount": 52345,
+    "response": "",
+    "bl_th": "MEI12",
+    "nominalTagihan": 52345,
+    "penalti": 0,
+    "totalTagihan": 54845
+
+==============================pdamInquiry_error_soa=====================================
+passed

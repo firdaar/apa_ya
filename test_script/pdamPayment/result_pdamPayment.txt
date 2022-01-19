@@ -1,0 +1,112 @@
+==================================pdamPayment_test_normal=============================
+
+{
+    "trxType": "69",
+    "status": "success",
+    "data": {
+        "error": false,
+        "ket": "PDAM_BANDUNG,",
+        "reffNum": "20170831155606050309",
+        "journal": "904170226",
+        "financialJournal": "461091",
+        "amount": "100000",
+        "billingId": "011111113",
+        "billReffNum": "357289246981000",
+        "customerName": "ATIEK SETYOWATIY",
+        "response": "",
+        "accountNum": "1231",
+        "footerNote": "",
+        "bl_th": "NOV15",
+        "penalti": "00000000",
+        "kubikasi": "0",
+        "nominalTagihan": "100000",
+        "totalTagihan": "102500",
+        "errorNum": ""
+    },
+    "result": {
+        "kode_loket": "BNI25950299",
+        "kd_lkt": "50299",
+        "nama": "Firda A'gen edit",
+        "kode_cabang": "259",
+        "kode_mitra": "BNI",
+        "alamat": "01/01 Setiabudi Setia Budi Kota Jakarta Selatan DKI Jakarta 12910",
+        "nama_usaha": "APA YA"
+    },
+    "CustomerData": {
+        "noRek": "1231",
+        "customerName": "ATIEK SETYOWATIY",
+        "adminFee": "2500",
+        "namaPerusahaan": "IPL BSD",
+        "time": "2022-01-17T16:18:00+07:00"
+    }
+}
+
+====================================pdamPayment_already_done============================
+{
+    "error": true,
+    "errorNum": "5006",
+    "message": "Transaksi sudah dilakukan, mohon cek saldo rekening BNI dan laporan transaksi Anda. Apabila ingin mengulangi transaksi yang sama, silahkan tunggu 5 menit lagi"
+}
+=======================================pdamPayment_wrong_pin====================
+{
+    "trxType": "69",
+    "status": "success",
+    "data": {
+        "error": true,
+        "errorNum": "5013",
+        "message": "TRANSAKSI GAGAL : Pin transaksi salah",
+        "ori_errorNum": "5013",
+        "ori_message": "TRANSAKSI GAGAL : Pin transaksi salah"
+    },
+    "result": {
+        "kode_loket": "BNI25950299",
+        "kd_lkt": "50299",
+        "nama": "Firda A'gen edit",
+        "kode_cabang": "259",
+        "kode_mitra": "BNI",
+        "alamat": "01/01 Setiabudi Setia Budi Kota Jakarta Selatan DKI Jakarta 12910",
+        "nama_usaha": "APA YA"
+    },
+    "CustomerData": {
+        "noRek": "1231",
+        "customerName": "ATIEK SETYOWATIY",
+        "adminFee": "2500",
+        "namaPerusahaan": "IPL BSD",
+        "time": "2022-01-17T16:54:00+07:00"
+    }
+}
+=================================pdamPayment_error_soa================
+{
+    "trxType": "69",
+    "status": "success",
+    "data": {
+        "error": true,
+        "message": "",
+        "bl_th": "NOV15",
+        "penalti": "00000000",
+        "kubikasi": "0",
+        "nominalTagihan": "100000",
+        "totalTagihan": "102500",
+        "ori_message": ""
+    },
+    "result": {
+        "kode_loket": "BNI25950299",
+        "kd_lkt": "50299",
+        "nama": "Firda A'gen edit",
+        "kode_cabang": "259",
+        "kode_mitra": "BNI",
+        "alamat": "01/01 Setiabudi Setia Budi Kota Jakarta Selatan DKI Jakarta 12910",
+        "nama_usaha": "APA YA"
+    },
+    "CustomerData": {
+        "noRek": "1231",
+        "customerName": "ATIEK SETYOWATIY",
+        "adminFee": "2500",
+        "namaPerusahaan": "IPL BSD",
+        "time": "2022-01-17T16:55:13+07:00"
+    }
+}
+========pdamPayment_session_invalid===================================================
+========pdamPayment_session_not_found=================================================
+========pdamPayment_bypass===========================================================
+passed

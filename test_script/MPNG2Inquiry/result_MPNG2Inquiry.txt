@@ -1,0 +1,34 @@
+======================MPNG2Inquiry_test_normal=========================================
+{
+    "ket": "Pembayaran MPN - DJP",
+    "error": false,
+    "reffNum": "201909038260100164",
+    "h_billingId": "115030064845",
+    "h_npwp": "013104757623025",
+    "h_nama": "GUDANG GARAM, PT.",
+    "h_alamat": "JL.MESJID IV NO.19,JAKARTA UTARA",
+    "h_akun": "9",
+    "h_kdJnsSetoran": "001231",
+    "h_masaPajak": "2015-05-17",
+    "h_nomorSK": "070800",
+    "h_nop": "900019191818181778",
+    "h_jnsDokumen": "",
+    "h_nmrDokumen": "",
+    "h_tglDokumen": "",
+    "h_kdKpbc": "",
+    "h_kodeKL": "",
+    "h_unitEselon": "",
+    "h_kdSatker": "",
+    "h_currency": "IDR",
+    "c_adminBank": 0,
+    "h_tagihan": 1000000,
+    "c_totalBayar": 1000000
+}
+==================================MPNG2Inquiry_abnormal_error_soa=======================
+
+assert resp error False == True
+
+=================================MPNG2Inquiry_abnormal_session_not_found==================
+=================================MPNG2Inquiry_abnormal_session_invalid====================
+=================================MPNG2Inquiry_bypass======================================
+passed

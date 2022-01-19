@@ -1,0 +1,84 @@
+=======================MPNG2Payment_error_wrong_pin========================================
+{
+    "trxType": "122",
+    "status": "success",
+    "data": {
+        "error": true,
+        "errorNum": "5013",
+        "message": "TRANSAKSI GAGAL : Pin transaksi salah"
+    },
+    "result": {
+        "kode_loket": "BNI25950299",
+        "kd_lkt": "50299",
+        "nama": "Firda A'gen edit",
+        "kode_cabang": "259",
+        "kode_mitra": "BNI",
+        "alamat": "01/01 Setiabudi Setia Budi Kota Jakarta Selatan DKI Jakarta 12910"
+    },
+    "CustomerData": {
+        "time": "2022-01-19T09:50:53+07:00"
+    }
+}
+
+=======================MPNG2Payment_test_normal============================================
+{
+    "trxType": "122",
+    "status": "success",
+    "data": {
+        "error": false,
+        "reffNum": "201909111038380100164",
+        "ket": "Pembayaran MPN G2 - DJP",
+        "h_billingId": "115030016764845",
+        "h_npwp": "021076427077000",
+        "h_nama": "NPWP DUMMY BADAN DUA",
+        "h_alamat": "JL.MESJID IV NO.19,JAKARTA UTARA",
+        "h_akun": "411122",
+        "h_kdJnsSetoran": "100",
+        "h_masaPajak": "03032014",
+        "h_nomorSK": "000000000000000",
+        "h_nop": "900019191818181778",
+        "h_jnsDokumen": "",
+        "h_nmrDokumen": "",
+        "h_tglDokumen": "",
+        "h_kdKpbc": "",
+        "h_kodeKL": "",
+        "h_unitEselonI": "",
+        "h_kdSatker": "",
+        "h_currency": "IDR",
+        "h_tagihan": "1000000",
+        "h_ntpn": "0CD484CP4VQLIDK2",
+        "h_ntb": "000000051977",
+        "stan": "088848",
+        "tglBuku": "07/05/16",
+        "mataAnggaran": "411122",
+        "nomorKttpn": "000000000000000",
+        "waktuTrx": "11/09/19 10:45:51",
+        "nmCabangTrx": "BNI 46",
+        "kdCabangTrx": "0996",
+        "c_adminBank": "0",
+        "c_totalBayar": "11111112",
+        "nominalHuruf": "satu juta rupiah",
+        "financialJournal": "051977",
+        "errorNum": ""
+    },
+    "result": {
+        "kode_loket": "BNI25950299",
+        "kd_lkt": "50299",
+        "nama": "Firda A'gen edit",
+        "kode_cabang": "259",
+        "kode_mitra": "BNI",
+        "alamat": "01/01 Setiabudi Setia Budi Kota Jakarta Selatan DKI Jakarta 12910"
+    },
+    "CustomerData": {
+        "time": "2022-01-19T09:53:05+07:00"
+    }
+}
+====================MPNG2Payment_already_done==========================================
+{
+    "error": true,
+    "errorNum": "5006",
+    "message": "Transaksi sudah dilakukan, mohon cek saldo rekening BNI dan laporan transaksi Anda. Apabila ingin mengulangi transaksi yang sama, silahkan tunggu 5 menit lagi"
+}
+================================MPNG2Payment_abnormal_error_soa============================
+assert resp error False == True
+===============================MPNG2Payment_abnormal_error_wrongpin
