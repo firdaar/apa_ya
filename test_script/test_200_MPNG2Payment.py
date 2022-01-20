@@ -41,11 +41,11 @@ def login_user(a):
   logging.debug('session: ' + session)
   return session
 
+reffNum = time.strftime("%Y%m%d%H%M%S") + '050299'
 ### TC Normal ###
 #################
 def test_normal():
   session = login_user("agen")
-  reffNum = time.strftime("%Y%m%d%H%M%S") + '050299'
   post_data = """{
     "kode_mitra": "BNI",
 	  "kode_loket": "50299",
@@ -139,7 +139,6 @@ def test_normal():
 ##############################################
 def test_abnormal_already_done():
   session = login_user("agen")
-  reffNum = time.strftime("%Y%m%d%H%M%S") + '050299'
   post_data = """{
     "kode_mitra": "BNI",
 	"kode_loket": "50299",
@@ -189,7 +188,6 @@ def test_abnormal_already_done():
 ###############################
 def test_abnormal_wrong_pin():
   session = login_user("agen")
-  reffNum = time.strftime("%Y%m%d%H%M%S") + '050299'
   post_data = """{
     "kode_mitra": "BNI",
 	  "kode_loket": "50299",
@@ -256,7 +254,7 @@ def test_abnormal_error_soa():
 	"kode_loket": "50299",
 	"kode_cabang": "259",
 	"ket": "Pembayaran MPN G2 - DJP",
-	"reffNum": "20190911103864",
+	"reffNum": "%s",
 	"h_billingId": "1150300",
 	"h_npwp": "021076427077000",
 	"h_nama": "NPWP DUMMY BADAN DUA",
@@ -286,7 +284,7 @@ def test_abnormal_error_soa():
 	"req_id": "1568173118939741",
     "session": "%s"
   }
-  """ % (session)
+  """ % (reffNum,session)
   logging.debug(post_data)
   logging.debug(http_endpoint)
   req = requests.post(http_endpoint, json=json.loads(post_data))
@@ -313,7 +311,6 @@ def test_abnormal_error_soa():
 ### TC Abnormal - Session Not Found ###
 #######################################
 def test_abnormal_session_not_found():
-  reffNum = time.strftime("%Y%m%d%H%M%S") + '050299'
   post_data = """{
   "kode_mitra": "BNI",
 	"kode_loket": "50299",
@@ -360,7 +357,6 @@ def test_abnormal_session_not_found():
 ### TC Abnormal - Session Invalid ###
 #####################################
 def test_abnormal_session_invalid():
-  reffNum = time.strftime("%Y%m%d%H%M%S") + '050299'
   session = "12345"
   post_data = """{
     "kode_mitra": "BNI",
@@ -409,7 +405,6 @@ def test_abnormal_session_invalid():
 ### TC Bypass Session ###
 #########################
 def test_bypass_session():
-  reffNum = time.strftime("%Y%m%d%H%M%S") + '050299'
   post_data = """{
     "kode_mitra": "BNI",
 	  "kode_loket": "50299",
