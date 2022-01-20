@@ -1,0 +1,47 @@
+CREATE BILLING MPNg2
+
+Inquiry
+{
+	"kode_mitra": "IPY",
+	"kode_loket": "00005",
+	"kode_cabang": "014",
+	"reffNum": "20190822094041000005",
+	"npwpNum": "242840032035000",
+	"mapCode": "411124",
+	"depositType": "100",
+	"trxAmt": "15000",
+	"taxPeriod": "07",
+	"taxYear": "2019",
+	"browser_agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36",
+	"ip_address": "10.70.9.162",
+	"id_api": "web",
+	"ip_server": "68",
+	"req_id": "1566441641246523",
+	"session": "e559c667790f76be4280a30b42a4aefc"
+}
+
+Payment
+{
+	"kode_mitra": "IPY",
+	"kode_loket": "00005",
+	"kode_cabang": "014",
+	"reffNum": "20190822094114000005",
+	"ket": "Pembuatan Kode Billing MPN G2",
+	"npwpNum": "242840032035000",
+	"mapCode": "411124",
+	"depositType": "100",
+	"trxAmt": "15000",
+	"taxPeriod": "07",
+	"taxYear": "2019",
+	"wpName": "EDWARD VAN DER KAATSEN",
+	"wpAddress": "JL. BUNTU NO. 00 ANTABRANTA",
+	"mapDepositName": "MAP NGAWUR SETORAN LEBIH ANEH",
+	"pin_transaksi": "12345",
+	"accountNum": "115222877",
+	"browser_agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36",
+	"ip_address": "10.70.9.162",
+	"id_api": "web",
+	"ip_server": "68",
+	"req_id": "1566441674371777",
+	"session": "e559c667790f76be4280a30b42a4aefc"
+}
