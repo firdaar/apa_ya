@@ -1,0 +1,258 @@
+LPG3K LOGBOOK
+
+/lpg3kgInsertLogbook
+
+{
+	"nama": "nurus test",
+	"tglbeli": "2021-05-07",
+	"kategori": "Rumah Tangga",
+	"alamat": "palmerah",
+	"deskripsi": "toko nurus",
+	"jumlah": "18",
+	"harga": "19500",
+	"total": "351000",
+	"username": "BNIAG100185",
+	"reffNum": "202105070847170100185",
+	"pin_transaksi": "12345",
+	"browser_agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36",
+	"ip_address": "10.70.9.164",
+	"id_api": "web",
+	"ip_server": "68",
+	"req_id": "1620352037409454",
+	"session": "85d3e0b76b6fe25adee7e342b0d31fcd"
+}
+
+{
+	"error": false,
+	"data": {
+		"idpangkalan": "1230001",
+		"nama": "nurus test",
+		"tglbeli": "2021-05-07",
+		"kategori": "Rumah Tangga",
+		"alamat": "palmerah",
+		"deskripsi": "toko nurus",
+		"jumlah": "18",
+		"harga": "19500",
+		"total": "351000",
+		"code": "00"
+	},
+	"errorNum": ""
+}
+
+/lpg3kgUpdateLogbook
+
+{
+	"idlogbook": "60949efa620ce98d98aa7c71",
+	"nama": "nurus test",
+	"tglbeli": "2021-05-07",
+	"kategori": "Rumah Tangga",
+	"alamat": "palmerah",
+	"deskripsi": "toko nurus",
+	"jumlah": "20",
+	"harga": "19500",
+	"total": "390000",
+	"username": "BNIAG100185",
+	"reffNum": "202105070923560100185",
+	"pin_transaksi": "12345",
+	"browser_agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36",
+	"ip_address": "10.70.9.164",
+	"id_api": "web",
+	"ip_server": "68",
+	"req_id": "1620354236891904",
+	"session": "2b184128731c21ca34be82efaf946160"
+}
+
+{
+	"error": false,
+	"data": {
+		"code": "00",
+		"description": "Updated Success"
+	},
+	"errorNum": ""
+}
+
+/lpg3kgDeleteLogbook
+
+{
+	"idlogbook": "608b7d0063be34317621d840",
+	"nama": "nama saya",
+	"tglbeli": "2021-04-29",
+	"kategori": "Rumah Tangga",
+	"alamat": "apa ya",
+	"deskripsi": "apa ya",
+	"jumlah": "4",
+	"harga": "10000",
+	"total": "40000",
+	"username": "BNIAG100185",
+	"reffNum": "202105070932080100185",
+	"pin_transaksi": "12345",
+	"browser_agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36",
+	"ip_address": "10.70.9.164",
+	"id_api": "web",
+	"ip_server": "68",
+	"req_id": "1620354728169610",
+	"session": "2b184128731c21ca34be82efaf946160"
+}
+
+{
+	"error": false,
+	"data": {
+		"code": "00",
+		"description": "Deleted Success"
+	},
+	"errorNum": ""
+}
+
+/lpg3kgInquiryLogbook
+
+{
+	"tipe": "monthly",
+	"tglawal": "2021-04",
+	"tglakhir": "2021-05",
+	"username": "BNIAG100185",
+	"browser_agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36",
+	"ip_address": "10.70.9.164",
+	"id_api": "web",
+	"ip_server": "68",
+	"req_id": "1620359190749544",
+	"session": "0b895e1618c0896a9a936e8ef641aaa6"
+}
+
+{
+	"error": false,
+	"count": 11,
+	"data": [{
+		"idpangkalan": "1230001",
+		"nama": "nurus",
+		"tglbeli": "2021-04-27",
+		"kategori": "Usaha Mikro",
+		"alamat": "jakbar",
+		"deskripsi": "",
+		"jumlah": "10",
+		"harga": "19000",
+		"total": "190000",
+		"channelid": "AGEN46",
+		"idlogbook": "60877820220b0f7534348588"
+	}, {
+		"idpangkalan": "1230001",
+		"nama": "ulfa",
+		"tglbeli": "2021-04-27",
+		"kategori": "Rumah Tangga",
+		"alamat": "magelang",
+		"deskripsi": "",
+		"jumlah": "1",
+		"harga": "20000",
+		"total": "20000",
+		"channelid": "AGEN46",
+		"idlogbook": "6087b26513296530e28def14"
+	}, {
+		"idpangkalan": "1230001",
+		"nama": "jini",
+		"tglbeli": "2021-04-25",
+		"kategori": "Lainnya",
+		"alamat": "jaksel",
+		"deskripsi": "",
+		"jumlah": "32",
+		"harga": "17500",
+		"total": "560000",
+		"channelid": "AGEN46",
+		"idlogbook": "6087b1962d96948068eccbe7"
+	}, {
+		"idpangkalan": "1230001",
+		"nama": "nisa",
+		"tglbeli": "2021-04-25",
+		"kategori": "Usaha Mikro",
+		"alamat": "jakpus",
+		"deskripsi": "",
+		"jumlah": "8",
+		"harga": "19000",
+		"total": "152000",
+		"channelid": "AGEN46",
+		"idlogbook": "6087b24526637184d7f39326"
+	}, {
+		"idpangkalan": "1230001",
+		"nama": "veni",
+		"tglbeli": "2021-04-24",
+		"kategori": "Usaha Mikro",
+		"alamat": "bandung",
+		"deskripsi": "usaha",
+		"jumlah": "22",
+		"harga": "18000",
+		"total": "396000",
+		"channelid": "AGEN46",
+		"idlogbook": "6087b1c0a5fec0da9d38bec8"
+	}, {
+		"idpangkalan": "1230001",
+		"nama": "nana",
+		"tglbeli": "2021-04-24",
+		"kategori": "Usaha Mikro",
+		"alamat": "jakbar",
+		"deskripsi": "",
+		"jumlah": "5",
+		"harga": "19000",
+		"total": "95000",
+		"channelid": "AGEN46",
+		"idlogbook": "6087b1f93ed5336e71e9551f"
+	}, {
+		"idpangkalan": "1230001",
+		"nama": "nina",
+		"tglbeli": "2021-04-23",
+		"kategori": "Usaha Mikro",
+		"alamat": "surabaya",
+		"deskripsi": "kelontong",
+		"jumlah": "12",
+		"harga": "20000",
+		"total": "240000",
+		"channelid": "AGEN46",
+		"idlogbook": "6087b14cc723e8fd27373b24"
+	}, {
+		"idpangkalan": "1230001",
+		"nama": "windri",
+		"tglbeli": "2021-04-23",
+		"kategori": "Usaha Mikro",
+		"alamat": "belitung",
+		"deskripsi": "",
+		"jumlah": "25",
+		"harga": "18000",
+		"total": "450000",
+		"channelid": "AGEN46",
+		"idlogbook": "6087b2ce9eecc7c192f2311f"
+	}, {
+		"idpangkalan": "1230001",
+		"nama": "nirina",
+		"tglbeli": "2021-04-22",
+		"kategori": "Reseller",
+		"alamat": "jaktim",
+		"deskripsi": "",
+		"jumlah": "19",
+		"harga": "19500",
+		"total": "370500",
+		"channelid": "AGEN46",
+		"idlogbook": "6087b1723781ebf96e210b89"
+	}, {
+		"idpangkalan": "1230001",
+		"nama": "venia",
+		"tglbeli": "2021-04-22",
+		"kategori": "Usaha Mikro",
+		"alamat": "solo",
+		"deskripsi": "",
+		"jumlah": "55",
+		"harga": "10000",
+		"total": "550000",
+		"channelid": "AGEN46",
+		"idlogbook": "6087b21d05fd45d46b988daf"
+	}, {
+		"idpangkalan": "1230001",
+		"nama": "ajen",
+		"tglbeli": "2021-04-20",
+		"kategori": "Reseller",
+		"alamat": "yogya",
+		"deskripsi": "a",
+		"jumlah": "4",
+		"harga": "210000",
+		"total": "840000",
+		"channelid": "AGEN46",
+		"idlogbook": "6087b28df8043fe096ae0786"
+	}],
+	"errorNum": ""
+}
