@@ -41,11 +41,11 @@ def login_user(a):
   logging.debug('session: ' + session)
   return session
 
+reffNum = time.strftime("%Y%m%d%H%M%S") + '050299'
 ### TC Normal ###
 #################
 def test_normal():
   session = login_user("agen")
-  reffNum = time.strftime("%Y%m%d%H%M%S") + '050299'
   post_data = """{
 	"kode_mitra": "BNI",
 	"kode_loket": "50299",
@@ -114,7 +114,6 @@ def test_normal():
 ##############################################
 def test_abnormal_already_done():
   session = login_user("agen")
-  reffNum = time.strftime("%Y%m%d%H%M%S") + '050299'
   post_data = """{
 	"kode_mitra": "BNI",
 	"kode_loket": "50299",
@@ -160,7 +159,6 @@ def test_abnormal_already_done():
 ###############################
 def test_abnormal_wrong_pin():
   session = login_user("agen")
-  reffNum = time.strftime("%Y%m%d%H%M%S") + '050299'
   post_data = """{
 	"kode_mitra": "BNI",
 	"kode_loket": "50299",
@@ -218,7 +216,6 @@ def test_abnormal_wrong_pin():
 ###############################
 def test_abnormal_error_soa():
   session = login_user("agen")
-  reffNum=time.strftime("%Y%m%d%H%M%S") + '050299'
   post_data = """{
 	"kode_mitra": "BNI",
 	"kode_loket": "50299",
@@ -277,7 +274,6 @@ def test_abnormal_error_soa():
 ### TC Abnormal - Session Not Found ###
 #######################################
 def test_abnormal_session_not_found():
-  reffNum=time.strftime("%Y%m%d%H%M%S") + '050299'
   post_data = """{
 	"kode_mitra": "BNI",
 	"kode_loket": "50299",
@@ -321,7 +317,6 @@ def test_abnormal_session_not_found():
 #####################################
 def test_abnormal_session_invalid():
   session = "12345"
-  reffNum=time.strftime("%Y%m%d%H%M%S") + '050299'
   post_data = """{
 	"kode_mitra": "BNI",
 	"kode_loket": "50299",
@@ -365,7 +360,6 @@ def test_abnormal_session_invalid():
 ### TC Bypass Session ###
 #########################
 def test_bypass_session():
-  reffNum=time.strftime("%Y%m%d%H%M%S") + '050299'
   post_data = """{
 	"kode_mitra": "BNI",
 	"kode_loket": "50299",
