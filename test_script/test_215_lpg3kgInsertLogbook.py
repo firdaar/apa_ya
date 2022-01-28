@@ -71,7 +71,6 @@ def test_normal():
   req = requests.post(http_endpoint, json=json.loads(post_data))
   resp = req.json()
   logging.debug(resp)
-  print(resp)
   assert resp.get('data') != None
   assert resp.get('data').get('error') == False
   assert resp.get('data').get('idpangkalan') != None
@@ -113,7 +112,6 @@ def test_abnormal_wrong_pin():
   req = requests.post(http_endpoint, json=json.loads(post_data))
   resp = req.json()
   logging.debug(resp)
-  print(resp)
   assert resp.get('error') == True
   assert resp.get('errorNum') == '-2'
   assert resp.get('message') == 'Pin transaksi salah.'
@@ -146,7 +144,6 @@ def test_abnormal_error_soa():
   req = requests.post(http_endpoint, json=json.loads(post_data))
   resp = req.json()
   logging.debug(resp)
-  print(resp)
   assert resp.get('error') == True
   assert resp.get('errorNum') == "-1"
   assert resp.get('message') == "Duplicate reffNum"
@@ -178,7 +175,6 @@ def test_abnormal_session_not_found():
   req = requests.post(http_endpoint, json=json.loads(post_data))
   resp = req.json()
   logging.debug(resp)
-  print(resp)
   assert resp.get('code') == '66'
   assert resp.get('reason') == 'Session tidak ditemukan'
    
@@ -211,7 +207,6 @@ def test_abnormal_session_invalid():
   req = requests.post(http_endpoint, json=json.loads(post_data))
   resp = req.json()
   logging.debug(resp)
-  print(resp)
   assert resp.get('code') == '66'
   assert resp.get('reason') == 'Session invalid'
   
@@ -237,7 +232,6 @@ def test_bypass_session():
   req = requests.post(http_endpoint, json=json.loads(post_data))
   resp = req.json()
   logging.debug(resp)
-  print(resp)
   assert resp.get('error') == True
   assert resp.get('errorNum') == '5006'
   assert resp.get('message') == 'Transaksi sudah dilakukan, mohon cek saldo rekening BNI dan laporan transaksi Anda. Apabila ingin mengulangi transaksi yang sama, silahkan tunggu 5 menit lagi'
