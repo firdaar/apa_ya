@@ -63,7 +63,6 @@ def test_normal():
   req = requests.post(http_endpoint, json=json.loads(post_data))
   resp = req.json()
   logging.debug(resp)
-  print(resp)
   assert resp.get('error') == False
   assert resp.get('count') != None
   assert resp.get('data')!=None
@@ -80,9 +79,6 @@ def test_normal():
   assert resp.get('data').get('idlogbook') != None
   assert resp.get('errorNum')!=None
 
-  
-
-  
 ### TC Abnormal - Error SOA ###
 ###############################
 def test_abnormal_error_soa():
