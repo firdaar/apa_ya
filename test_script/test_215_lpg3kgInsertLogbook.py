@@ -181,7 +181,7 @@ def test_abnormal_session_not_found():
 ### TC Abnormal - Session Invalid ###
 #####################################
 def test_abnormal_session_invalid():
-  session = "bni098765"
+  session = "12345"
   post_data = """{
   	"nama": "nurus test",
   	"tglbeli": "2021-05-07",
