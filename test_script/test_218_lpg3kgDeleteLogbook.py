@@ -1,4 +1,3 @@
-from weakref import ref
 import requests
 import logging
 import json
@@ -60,7 +59,7 @@ def test_normal():
 	"total": "40000",
 	"username": "BNIAG100185",
 	"reffNum": "202105070932080100185",
-	"pin_transaksi": "12345",
+	"pin_transaksi": "bni098765",
 	"browser_agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36",
 	"ip_address": "10.70.9.164",
 	"id_api": "web",
@@ -74,7 +73,7 @@ def test_normal():
   req = requests.post(http_endpoint, json=json.loads(post_data))
   resp = req.json()
   logging.debug(resp)
-  print(resp)
+  assert resp.get('error')==False
   assert resp.get('data') != None
   assert resp.get('data').get('code') == '00'
   assert resp.get('data').get('description') == 'Deleted Succes'
@@ -111,7 +110,6 @@ def test_abnormal_wrong_pin():
   req = requests.post(http_endpoint, json=json.loads(post_data))
   resp = req.json()
   logging.debug(resp)
-  print(resp)
   assert resp.get('error') == True
   assert resp.get('errorNum') == '-2'
   assert resp.get('message') == 'Pin transaksi salah.'
@@ -146,7 +144,6 @@ def test_abnormal_error_soa():
   req = requests.post(http_endpoint, json=json.loads(post_data))
   resp = req.json()
   logging.debug(resp)
-  print(resp)
   assert resp.get('error') == True
   assert resp.get('errorNum') == "-1"
   assert resp.get('message') == "Duplicate reffNum"
@@ -230,10 +227,10 @@ def test_bypass_session():
 	"harga": "10000",
 	"total": "40000",
 	"username": "BNIAG100185",
-	"reffNum": "%s",
+	"reffNum": "202105070847170100185",
 	"pin_transaksi": "bni098765"
   }
-  """ %(reffNum)
+  """ 
   logging.debug(post_data)
   logging.debug(http_endpoint)
   req = requests.post(http_endpoint, json=json.loads(post_data))
