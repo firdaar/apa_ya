@@ -12,6 +12,28 @@
 	"staff_id": "BNIAG50299",
 	"username": "BNIAG50299"
 }
+{
+	"error": false,
+	"code": "00",
+	"message": "Harga berhasil ditambah.",
+	"data": {
+		"retailer_id": "000020",
+		"retailer_name": "Yoo Seung Ho",
+		"price": "20000",
+		"effective_date": "26-10-2018",
+		"retailer_phone": "081234567820",
+		"retailer_email": "seungho@email.com",
+		"pin_transaksi": "12345",
+		"channel_id": "AGEN46",
+		"agent_id": "810736",
+		"staff_id": "BNIAG50299",
+		"username": "BNIAG50299",
+		"count": "1",
+		"status_detail": "1",
+		"status_detail_message": "",
+		"error_num": false
+	}
+}
 
 /lpgUpdateHarga
 {
