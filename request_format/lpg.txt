@@ -50,6 +50,30 @@
 	"staff_id": "BNIAG50299",
 	"username": "BNIAG50299"
 }
+{
+	"error": false,
+	"code": "00",
+	"message": "Harga berhasil diubah.",
+	"data": {
+		"retailer_name": "CV SEMOGA KAYA 22222222222",
+		"price": "10250",
+		"effective_date": "27-10-2018",
+		"retailer_phone": "081212345677",
+		"retailer_email": "semoga.kaya@gmail.com",
+		"pin_transaksi": "12345",
+		"price_id": "104",
+		"retailer_id": "120351810736027",
+		"channel_id": "AGEN46",
+		"agent_id": "810736",
+		"staff_id": "BNIAG50299",
+		"username": "BNIAG50299",
+		"action": "UPDATE",
+		"SPECIAL_CONDITION": "sure",
+		"count": "1",
+		"status_detail": "1",
+		"status_detail_message": ""
+	}
+}
 
 /lpgDeleteHarga
 {
@@ -66,10 +90,48 @@
 	"staff_id": "BNIAG50299",
 	"username": "BNIAG50299"
 }
+{
+	"error": false,
+	"code": "00",
+	"message": "Harga berhasil dihapus.",
+	"data": {
+		"pin_transaksi": "12345",
+		"retailer_name": "Mitsuha",
+		"price": "1500",
+		"effective_date": "25-10-2018",
+		"retailer_phone": "08819092007",
+		"retailer_email": "mitsuha@gmail.com",
+		"price_id": "107",
+		"retailer_id": "000007",
+		"channel_id": "AGEN46",
+		"agent_id": "810736",
+		"staff_id": "BNIAG50299",
+		"username": "BNIAG50299",
+		"action": "DELETE",
+		"SPECIAL_CONDITION": "sure",
+		"count": "1",
+		"status_detail": "1",
+		"status_detail_message": ""
+	}
+}
 
 /lpgInquiryAgent
 {
 	"channel_id": "AGENT46",
 	"username": "BNIAG50299",
 	"agent_id": "8107"
+}
+{
+	"code": "00",
+	"message": "Agent ditemukan.",
+	"data": {
+		"agent_id": "810736",
+		"agent_name": "Sdr ALI  MAHMUD",
+		"phone_num": "628567707986",
+		"account_num": "113183485",
+		"provinsi": "Jawa Timur",
+		"kabupaten": "Kab Jember",
+		"notif_sms": "1",
+		"agent_email": "Anjelika.Hutapea@bni.co.id "
+	}
 }
