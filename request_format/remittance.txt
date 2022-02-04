@@ -1,0 +1,146 @@
+REMITTANCE
+
+/remittanceSearch
+{
+	"kode_mitra": "IPY",
+	"kode_cabang": "014",
+	"kode_loket": "00005",
+	"agent_id": "IPY01400005",
+	"reff": "1600004111      "
+	"browser_agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36",
+	"ip_address": "127.0.0.1",
+	"id_api": "web",
+	"ip_server": "68",
+	"session": "92ef2740df42d3ce341a105ce6f11036"
+}
+{
+	"error": false,
+	"ket": "Remittance",
+	"poType": "CSH",
+	"remitStatus": "0",
+	"totalRecords": "1",
+	"s06Record_output": [{
+		"reffCorrespondent": "1600004111      ",
+		"bicCover": "MERCMYK1XXX",
+		"refferenceNum": "S06MERC00134416 ",
+		"counterAdvis": "ITR013441",
+		"poType": "CSH",
+		"poDate": "2010-05-31",
+		"amountCurrency": "IDR",
+		"amount": "4.808.484",
+		"senderName": "ALI AMI                            ",
+		"beneficiaryName": "ALI  HARYANTO                      ",
+		"remitStatus": "0"
+	}],
+	"errorNum": ""
+}
+
+/remittanceInquiry
+{
+	"kode_mitra": "IPY",
+	"kode_cabang": "014",
+	"kode_loket": "00005",
+	"refferenceNum": "S06MERC00134416 ",
+	"counterAdvis": "ITR013441",
+	"status": "0",
+	"amountCurrency": "IDR"
+	"browser_agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36",
+	"ip_address": "127.0.0.1",
+	"id_api": "web",
+	"ip_server": "68",
+	"session": "92ef2740df42d3ce341a105ce6f11036"
+}
+{
+	"error": false,
+	"coreJournal": "610595",
+	"refferenceNum": "S06MERC00134416",
+	"counterAdvis": "ITR013441",
+	"trxDate": "31/05/2010",
+	"trxStatus": "Dapat Dibayarkan",
+	"remmAmount": "4808484.000",
+	"remmAmountCurrency": "IDR",
+	"remmAmountStr": "4.808.484- IDR",
+	"trxCharges": "0",
+	"refundCharge": "50.000",
+	"rateType": "03",
+	"beneficiaryName": "ALI AMI",
+	"beneficiaryAddress": "INDONESIA 62808114411",
+	"senderName": "ALI HARYANTO",
+	"senderAddress": "12 JALAN SUNGAI HUTAN MELINTANG PER",
+	"nonSTPReason": "CASH",
+	"naration": "",
+	"senderBank": "MERCHANTRADE ASIA SDN.BHD",
+	"coveringBank": "MERCMYK1XXX",
+	"coverRefference": "1600004111",
+	"coverAccount": "766002337",
+	"branchNum": "0766",
+	"debitAccountNum": "766002337",
+	"creditAccountNum": "                 ",
+	"chargeType": "OUR",
+	"amdCharges": "0",
+	"xtrCharges": "60.000",
+	"totTrxCharges": "60.000",
+	"totTrxChargesStr": "60 - IDR",
+	"paymentCurrency": "IDR/Rupiah",
+	"creditAmount": "4808424.000",
+	"creditAmountStr": "IDR 4.808.424",
+	"paymentType": "Tunai",
+	"errorNum": ""
+}
+
+/remittancePayment
+{
+	"kode_mitra": "IPY",
+	"kode_cabang": "014",
+	"kode_loket": "00005",
+	"pin_transaksi": "12345",
+	"reffCorrespondent": "1600004111",
+	"refferenceNum": "S06MERC00134416",
+	"counterAdvis": "ITR013441",
+	"remmAmount": "4808484.000",
+	"remmAmountCurrency": "IDR",
+	"trxCharges": "0",
+	"refundCharge": "50.000",
+	"creditAmount": "4808424.000",
+	"creditAmountCurrency": "IDR",
+	"baseAmount": "4808424.000",
+	"creditAccountNum": 4447,
+	"rateType": "03",
+	"amdCharges": "0",
+	"xtrCharges": "60.000",
+	"senderName": "ALI HARYANTO",
+	"senderAddress": "12 JALAN SUNGAI HUTAN MELINTANG PER",
+	"senderBank": "MERCHANTRADE ASIA SDN.BHD",
+	"naration": "",
+	"beneficiaryName": "ALI AMI",
+	"beneficiaryAddress": "INDONESIA 62808114411",
+	"paymentType": "Tunai",
+	"paymentCurrency": "IDR/Rupiah",
+	"totTrxChargesStr": "60 - IDR",
+	"totTrxChargesS": "60.000",
+	"remmAmountStr": "4.808.484 - IDR"
+	"browser_agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36",
+	"ip_address": "127.0.0.1",
+	"id_api": "web",
+	"ip_server": "68",
+	"session": "92ef2740df42d3ce341a105ce6f11036"
+}
+{
+	"error": false,
+	"ket": "Remittance Payment",
+	"coreJournal": "610596",
+	"refferenceNum": "S06MERC00134416",
+	"reffCorrespondent": "1600004111",
+	"senderName": "ALI HARYANTO",
+	"senderAddress": "12 JALAN SUNGAI HUTAN MELINTANG PER",
+	"senderBank": "MERCHANTRADE ASIA SDN.BHD",
+	"naration": "",
+	"beneficiaryName": "ALI AMI",
+	"beneficiaryAddress": "INDONESIA 62808114411",
+	"paymentType": "Tunai",
+	"paymentCurrency": "IDR/Rupiah",
+	"remmAmountStr": "4.808.484 - IDR",
+	"totTrxChargesStr": "60 - IDR",
+	"creditAmount": "4808424.000",
+	"errorNum": ""
+}
