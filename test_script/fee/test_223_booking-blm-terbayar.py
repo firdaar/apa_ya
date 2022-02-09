@@ -64,18 +64,13 @@ def test_normal():
   req = requests.post(http_endpoint, json=json.loads(post_data))
   resp = req.json()
   logging.debug(resp)
-  print(resp)
   assert resp.get('error') ==False
   assert resp.get('message') !=None
   assert resp.get('code') =='00'
   assert resp.get('code') =='00'
   assert resp.get('data') !=None
   assert resp.get('data').get('rows') !=None
-  for data in resp.get('data').get('rows'):
-    assert (data) !=None
   assert resp.get('data').get('footer') !=None
-  for data in resp.get('data').get('footer'):
-    assert (data) !=None
 
   
 ### TC Abnormal - Error SOA ###
@@ -101,7 +96,6 @@ def test_abnormal_error_soa():
   req = requests.post(http_endpoint, json=json.loads(post_data))
   resp = req.json()
   logging.debug(resp)
-  print(resp)
   assert resp.get('error') == True
   assert resp.get('errorNum') != None
   assert resp.get('message') != None
@@ -178,8 +172,4 @@ def test_bypass_session():
   assert resp.get('code') =='00'
   assert resp.get('data') !=None
   assert resp.get('data').get('rows') !=None
-  for data in resp.get('data').get('rows'):
-    assert (data) !=None
   assert resp.get('data').get('footer') !=None
-  for data in resp.get('data').get('footer'):
-    assert (data) !=None
