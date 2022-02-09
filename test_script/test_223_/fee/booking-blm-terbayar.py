@@ -90,9 +90,9 @@ def test_normal():
 def test_abnormal_error_soa():
   session = login_user('agen')
   post_data = """{
-     "username": "BNIAG5029",
-    "start_date": "2021-12-25",
-    "end_date": "2021-01-25",
+     "username": "BNIAG502",
+    "start_date": "2021-12-5",
+    "end_date": "2021-01-5",
     "offset": "",
     "limit": "",
     "order": "",
