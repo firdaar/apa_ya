@@ -10,7 +10,7 @@ logging.basicConfig(level=logging.DEBUG)
 IP_PORT = os.getenv("IP_PORT", "10.70.152.25:3000")
 USER = os.getenv("USER", "agen")
 
-http_endpoint = "http://%s/LPG3KGPayment" % (IP_PORT)
+http_endpoint = "http://%s/remittancePayment" % (IP_PORT)
 
 def login_user(a):
   if a == "agen":
@@ -164,15 +164,15 @@ def test_abnormal_wrong_pin():
 	"kode_mitra": "IPY",
 	"kode_cabang": "014",
 	"kode_loket": "00005",
-	"pin_transaksi": "12345",
+	"pin_transaksi": "12",
 	"reffCorrespondent": "1600004111",
 	"refferenceNum": "S06MERC00134416",
 	"counterAdvis": "ITR013441",
 	"remmAmount": "4808484.000",
 	"remmAmountCurrency": "IDR",
 	"trxCharges": "0",
-	"refundCharge": "50.000",
-	"creditAmount": "4808424.000",
+	"refundCharge": "50.00",
+	"creditAmount": "4808424.00",
 	"creditAmountCurrency": "IDR",
 	"baseAmount": "4808424.000",
 	"creditAccountNum": 4447,
@@ -202,12 +202,11 @@ def test_abnormal_wrong_pin():
   req = requests.post(http_endpoint, json=json.loads(post_data))
   resp = req.json()
   logging.debug(resp)
-  print(resp)
-  assert resp.get('trxType') == '208'
+  assert resp.get('trxType') == '401'
   assert resp.get('status') == 'success'
   assert resp.get('data') != None
   assert resp.get('data').get('error') == True
-  assert resp.get('data').get('errorNum') == '5013'
+  assert resp.get('data').get('errorNum') == '-2'
   assert resp.get('data').get('message') == 'TRANSAKSI GAGAL : Pin transaksi salah'
   assert resp.get('result') != None
   assert resp.get('result').get('kode_loket') != None
@@ -228,8 +227,8 @@ def test_abnormal_error_soa():
 	"kode_cabang": "014",
 	"kode_loket": "00005",
 	"pin_transaksi": "12345",
-	"reffCorrespondent": "1600004111",
-	"refferenceNum": "S06MERC00134416",
+	"reffCorrespondent": "1600004",
+	"refferenceNum": "S06MERC00116",
 	"counterAdvis": "ITR013441",
 	"remmAmount": "4808484.000",
 	"remmAmountCurrency": "IDR",
@@ -265,14 +264,13 @@ def test_abnormal_error_soa():
   req = requests.post(http_endpoint, json=json.loads(post_data))
   resp = req.json()
   logging.debug(resp)
-  assert resp.get('trxType') == '208'
+  assert resp.get('trxType') == '401'
   assert resp.get('status') == 'success'
   assert resp.get('data') != None
   assert resp.get('data').get('error') == True
   assert resp.get('data').get('errorNum') != None
   assert resp.get('data').get('message') != None
-  assert resp.get('data').get('ori_errorNum') != None
-  assert resp.get('data').get('ori_message') != None
+  assert resp.get('data').get('ori_errorNum')!=None
   assert resp.get('result') != None
   assert resp.get('result').get('kode_loket') != None
   assert resp.get('result').get('kd_lkt') != None
@@ -282,6 +280,7 @@ def test_abnormal_error_soa():
   assert resp.get('result').get('alamat') != None
   assert resp.get('CustomerData') != None
   assert resp.get('CustomerData').get('time') != None
+
 
 ### TC Abnormal - Session Not Found ###
 #######################################
