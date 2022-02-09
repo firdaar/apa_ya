@@ -10,7 +10,7 @@ logging.basicConfig(level=logging.DEBUG)
 IP_PORT = os.getenv("IP_PORT", "10.70.152.25:3000")
 USER = os.getenv("USER", "agen")
 
-http_endpoint = "http://%s//fee/default-mitra" % (IP_PORT)
+http_endpoint = "http://%s/fee/default-mitra" % (IP_PORT)
 
 def login_user(a):
   if a == "agen":
