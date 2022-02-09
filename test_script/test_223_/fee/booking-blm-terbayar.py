@@ -126,7 +126,7 @@ def test_abnormal_session_not_found():
     "ip_address": "10.45.63.51",
     "id_api": "web",
     "ip_server": "68",
-    "req_id": "1625112989690107",
+    "req_id": "1625112989690107"
   }"""
   logging.debug(post_data)
   logging.debug(http_endpoint)
