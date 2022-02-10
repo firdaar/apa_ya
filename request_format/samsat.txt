@@ -1,0 +1,54 @@
+SAMSAT
+
+/samsatInquiry 
+{
+    "kode_mitra": "BNI",
+    "kode_cabang": "259",
+    "kode_loket": "50299",
+    "reffNum": "20210913092201050299",
+    "paymentCode": "123456789012345678",
+    "customerIdCardNumber": "1234567890123456"
+}
+
+/samsatPayment
+{
+    "kode_mitra": "BNI",
+    "kode_cabang": "259",
+    "kode_loket": "50299",
+    "ket": "SAMSAT DIGITAL NASIONAL",
+    "reffNum": "20210913102201050299",
+    "paymentCode": "123456789012345678",
+    "customerIdCardNumber": "1234567890123456",
+    "adminBank": "000010000",
+    "languageCode": "0",
+    "nomorRangka": "98765432",
+    "nomorMesin": "",
+    "namaPemilik": "I PUTU MEGA SUMANTARA",
+    "alamatPemilik": "",
+    "nomorPolisi": "DK279FF",
+    "warnaPlat": "MERAH",
+    "milikKenamaa": "001",
+    "jenisKendaraan": "MBL.SEDAN/SEJEN",
+    "namaMerekKB": "HONDA",
+    "namaModelKB": "SEDAN",
+    "tahunBuatan": "1992",
+    "tanggalAkhirPajakLama": "20150730",
+    "tanggalAkhirPajakBaru": "20180730",
+    "pokokBBN": "000000000000",
+    "dendaBBN": "000000000000",
+    "pokokPKB": "000000200000",
+    "dendaPKB": "000000000000",
+    "pokokSWD": "000000200000",
+    "dendaSWD": "000000000000",
+    "PNBP": "000000050000",
+    "pokokAdminTNKB": "000000000000",
+    "jumlah": "000000457500",
+    "keteranganNamaSamsat": "DIGITAL NASIONAL",
+    "keteranganTanggalBerlaku": "03102021",
+    "keteranganLain": "",
+    "reserved_01": "12345",
+    "NTP": "NTP030500001111",
+    "amount": "250000",
+    "accountNum": "1231",
+    "pin_transaksi": "12345"
+}
