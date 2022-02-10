@@ -93,42 +93,39 @@ def test_normal():
   req = requests.post(http_endpoint, json=json.loads(post_data))
   resp = req.json()
   logging.debug(resp)
-  print(resp)
-  assert resp.get('error') == False
-  assert resp.get('ket') != None
-  assert resp.get('reffNum') != None
-  assert resp.get('paymentCode') != None
-  assert resp.get('customerIdCardNumber') != None
-  assert resp.get('adminBank') != None
-  assert resp.get('languageCode') != None
-  assert resp.get('nomorRangka') != None
-  assert resp.get('nomorMesin') != None
-  assert resp.get('namaPemilik') != None
-  assert resp.get('alamatPemilik') != None
-  assert resp.get('nomorPolisi') != None
-  assert resp.get('warnaPlat') != None
-  assert resp.get('jenisKendaraan') != None
-  assert resp.get('namaMerekKB') != None
-  assert resp.get('namaModelKB') != None
-  assert resp.get('tahunBuatan') != None
-  assert resp.get('tanggalAkhirPajakLama') != None
-  assert resp.get('tanggalAkhirPajakBaru') != None
-  assert resp.get('pokokBBN') != None
-  assert resp.get('dendaBBN') != None
-  assert resp.get('pokokPKB') != None
-  assert resp.get('dendaPKB') != None
-  assert resp.get('pokokSWD') != None
-  assert resp.get('dendaSWD') != None
-  assert resp.get('PNBP') != None
-  assert resp.get('pokokAdminTNKB') != None
-  assert resp.get('jumlah') != None
-  assert resp.get('keteranganNamaSamsat') != None
-  assert resp.get('keteranganTanggalBerlaku') != None
-  assert resp.get('keteranganLain') != None
-  assert resp.get('reserved_01') != None
-  assert resp.get('NTP') != None
-  assert resp.get('amount') != None
-
+  assert resp.get('trxType') == '71'
+  assert resp.get('status') == 'success'
+  assert resp.get('data')!= None
+  assert resp.get('data').get('error') == False
+  assert resp.get('data').get('ket') != None
+  assert resp.get('data').get('reffNum') != None
+  assert resp.get('data').get('paymentCode') != None
+  assert resp.get('data').get('nomorPolisi') != None
+  assert resp.get('data').get('namaPemilik') != None
+  assert resp.get('data').get('customerIdCardNumber') != None
+  assert resp.get('data').get('tahunBuatan') != None
+  assert resp.get('data').get('tanggalAkhirPajakLama') != None
+  assert resp.get('data').get('tanggalAkhirPajakBaru') != None
+  assert resp.get('data').get('milikKenamaa') != None
+  assert resp.get('data').get('namaMerekKB') != None
+  assert resp.get('data').get('namaModelKB') != None
+  assert resp.get('data').get('jenisKendaraan') != None
+  assert resp.get('data').get('jumlah') != None
+  assert resp.get('data').get('adminBank') != None
+  assert resp.get('data').get('amount') != None
+  assert resp.get('data').get('keteranganTanggalBerlaku') != None
+  assert resp.get('data').get('financialJournal') != None
+  assert resp.get('data').get('errorNum') != None
+  assert resp.get('result')!=None
+  assert resp.get('result').get('kode_loket')!=None
+  assert resp.get('result').get('kd_lkt')!=None
+  assert resp.get('result').get('nama')!=None
+  assert resp.get('result').get('kode_cabang')!=None
+  assert resp.get('result').get('kode_mitra')!=None
+  assert resp.get('result').get('alamat')!=None
+  assert resp.get('result').get('nama_usaha')!=None
+  assert resp.get('CustomerData')!= None
+  assert resp.get('CustomerData').get('time')!= None
 
 ### TC Abnormal - Transaction Already Done ###
 ##############################################
@@ -252,6 +249,7 @@ def test_abnormal_wrong_pin():
   assert resp.get('result').get('kode_cabang') != None
   assert resp.get('result').get('kode_mitra') != None
   assert resp.get('result').get('alamat') != None
+  assert resp.get('result').get('nama_usaha') != None
   assert resp.get('CustomerData') != None
   assert resp.get('CustomerData').get('time') != None
   
@@ -321,6 +319,7 @@ def test_abnormal_error_soa():
   assert resp.get('result').get('kode_cabang') != None
   assert resp.get('result').get('kode_mitra') != None
   assert resp.get('result').get('alamat') != None
+  assert resp.get('result').get('nama_usaha') != None
   assert resp.get('CustomerData') != None
   assert resp.get('CustomerData').get('time') != None
 
