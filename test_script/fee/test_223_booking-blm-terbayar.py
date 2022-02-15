@@ -178,7 +178,6 @@ def test_bypass_session():
   req = requests.post(http_endpoint, json=json.loads(post_data))
   resp = req.json()
   logging.debug(resp)
-  print(resp)
   assert resp.get('rows')!=None
   assert resp.get('rows').get('transaksi_id')!=None
   assert resp.get('rows').get('kode_mitra')!=None
