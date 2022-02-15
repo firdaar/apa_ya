@@ -64,13 +64,25 @@ def test_normal():
   req = requests.post(http_endpoint, json=json.loads(post_data))
   resp = req.json()
   logging.debug(resp)
-  assert resp.get('error') ==False
-  assert resp.get('message') !=None
-  assert resp.get('code') =='00'
-  assert resp.get('code') =='00'
-  assert resp.get('data') !=None
-  assert resp.get('data').get('rows') !=None
-  assert resp.get('data').get('footer') !=None
+  assert resp.get('rows')!=None
+  assert resp.get('rows').get('transaksi_id')!=None
+  assert resp.get('rows').get('kode_mitra')!=None
+  assert resp.get('rows').get('kode_cabang')!=None
+  assert resp.get('rows').get('kode_loket')!=None
+  assert resp.get('rows').get('datetime')!=None
+  assert resp.get('rows').get('industri')!=None
+  assert resp.get('rows').get('trx_name')!=None
+  assert resp.get('rows').get('flag_fee_loket')!=None
+  assert resp.get('rows').get('jumlah_transaksi')!=None
+  assert resp.get('rows').get('pendapatan_per_transaksi')!=None
+  assert resp.get('rows').get('total_pendapatan')!=None
+  assert resp.get('rows').get('status')!=None
+  assert resp.get('rows').get('via')!=None
+  assert resp.get('footer') !=None
+  assert resp.get('footer').get('jumlah_transaksi_cr')!=None
+  assert resp.get('footer').get('jumlah_transaksi_db')!=None
+  assert resp.get('footer').get('total_pendapatan_cr')!=None
+  assert resp.get('footer').get('total_pendapatan_db')!=None
 
   
 ### TC Abnormal - Error SOA ###
@@ -166,10 +178,23 @@ def test_bypass_session():
   req = requests.post(http_endpoint, json=json.loads(post_data))
   resp = req.json()
   logging.debug(resp)
-  assert resp.get('error') ==False
-  assert resp.get('message') !=None
-  assert resp.get('code') =='00'
-  assert resp.get('code') =='00'
-  assert resp.get('data') !=None
-  assert resp.get('data').get('rows') !=None
-  assert resp.get('data').get('footer') !=None
+  print(resp)
+  assert resp.get('rows')!=None
+  assert resp.get('rows').get('transaksi_id')!=None
+  assert resp.get('rows').get('kode_mitra')!=None
+  assert resp.get('rows').get('kode_cabang')!=None
+  assert resp.get('rows').get('kode_loket')!=None
+  assert resp.get('rows').get('datetime')!=None
+  assert resp.get('rows').get('industri')!=None
+  assert resp.get('rows').get('trx_name')!=None
+  assert resp.get('rows').get('flag_fee_loket')!=None
+  assert resp.get('rows').get('jumlah_transaksi')!=None
+  assert resp.get('rows').get('pendapatan_per_transaksi')!=None
+  assert resp.get('rows').get('total_pendapatan')!=None
+  assert resp.get('rows').get('status')!=None
+  assert resp.get('rows').get('via')!=None
+  assert resp.get('footer') !=None
+  assert resp.get('footer').get('jumlah_transaksi_cr')!=None
+  assert resp.get('footer').get('jumlah_transaksi_db')!=None
+  assert resp.get('footer').get('total_pendapatan_cr')!=None
+  assert resp.get('footer').get('total_pendapatan_db')!=None
