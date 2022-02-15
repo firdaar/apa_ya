@@ -1,0 +1,106 @@
+PENDAFTARAN BPJS
+
+/getDataPeserta
+{
+	"trxId": "165612291359",
+	"nik": "7315010901940003",
+	"namaLengkap": "H.A. Yogi Manggabarani",
+	"tanggalLahir": "09-01-1994",
+	"noHP": "081542111258",
+	"email": "test2@mail.com",
+	"browser_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+	"ip_address": "10.45.63.155",
+	"id_api": "web",
+	"ip_server": "68",
+	"req_id": "1625396525479325",
+	"session": "3ed27251a0c466462eba57f2e9608529"
+}
+
+/getListKantorCabang
+{
+	"trxId": "564564235",
+	"level": "1",
+	"kodeLevel": "",
+	"browser_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+	"ip_address": "10.45.63.155",
+	"id_api": "web",
+	"ip_server": "68",
+	"req_id": "1625396526391146",
+	"session": "3ed27251a0c466462eba57f2e9608529"
+}
+
+/getListPropinsi
+{
+	"trxId": "564564235",
+	"level": "1",
+	"kodeLevel": "",
+	"browser_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+	"ip_address": "10.45.63.155",
+	"id_api": "web",
+	"ip_server": "68",
+	"req_id": "1625396526358079",
+	"session": "3ed27251a0c466462eba57f2e9608529"
+}
+
+/getListKabByProp
+{
+	"trxId": "564564235",
+	"kodePropinsi": "51",
+	"browser_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,ike Gecko) Chrome/91.0.4472.124 Safari/537.36",
+	"ip_address": "10.45.63.155",
+	"id_api": "web",
+	"ip_server": "68",
+	"req_id": "1625396598959481",
+	"seson": "3ed27251a0c466462eba57f2e9608529"
+}
+
+/getListKantorCabang
+{
+	"trxId": "564564235",
+	"level": "2",
+	"kodeLevel": "51",
+	"browser_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+	"ip_address": "10.45.63.155",
+	"id_api": "web",
+	"ip_server": "68",
+	"req_id": "1625396618890565",
+	"session": "3ed27251a0c466462eba57f2e9608529"
+}
+
+/verifikasiNIK
+{
+	"trxId": "165612291359",
+	"nik": "7315010901940003",
+	"noHp": "081542111258",
+	"email": "test2@mail.com",
+	"namaKtp": "H.A. Yogi Manggabarani",
+	"tglLahir": "09-01-1994",
+	"browser_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+	"ip_address": "10.45.63.155",
+	"id_api": "web",
+	"ip_server": "68",
+	"req_id": "1625396678787871",
+	"session": "3ed27251a0c466462eba57f2e9608529"
+}
+
+/submitData
+{
+	"trxId": "165612291359",
+	"nik": "7315010901940003",
+	"noHp": "081542111258",
+	"email": "test2@mail.com",
+	"namaKtp": "H.A. Yogi Manggabarani",
+	"tglLahir": "09-01-1994",
+	"alamat": "-",
+	"kodeKantor": "X05",
+	"jenisPekerjaan": "P001",
+	"lokasiPekerjaan": "5108",
+	"jamAkhir": "08:00",
+	"jamAwal": "17:00",
+	"browser_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+	"ip_address": "10.45.63.155",
+	"id_api": "web",
+	"ip_server": "68",
+	"req_id": "1625396678284412",
+	"session": "3ed27251a0c466462eba57f2e9608529"
+}
