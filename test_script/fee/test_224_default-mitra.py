@@ -62,7 +62,7 @@ def test_normal():
   req = requests.post(http_endpoint, json=json.loads(post_data))
   resp = req.json()
   logging.debug(resp)
-  assert resp.get('count')!=None
+  assert resp.get('rows')!=None
   for row in range(resp.get('count')):
     assert resp.get('rows')[row].get('id') !=None
     assert resp.get('rows')[row].get('trx_type_source') !=None
@@ -77,6 +77,7 @@ def test_normal():
     assert resp.get('rows')[row].get('fee_perorangan') !=None
     assert resp.get('rows')[row].get('fee_super_agen') !=None
     assert resp.get('rows')[row].get('biaya_loket') !=None
+  assert resp.get('count')!=None
 
 
 
@@ -165,7 +166,6 @@ def test_bypass_session():
   req = requests.post(http_endpoint, json=json.loads(post_data))
   resp = req.json()
   logging.debug(resp)
-  print(resp)
   assert resp.get('rows')!=None
   for row in range(resp.get('count')):
     assert resp.get('rows')[row].get('id') !=None
