@@ -64,7 +64,7 @@ def test_normal():
   logging.debug(resp)
   assert resp.get('rows')!=None
   rows = resp.get('rows')
-  for row in len(rows):
+  for row in range(0,len(rows)):
     assert rows[row].get('id') !=None
     assert rows[row].get('trx_type_source') !=None
     assert rows[row].get('jenis_trx') !=None
@@ -169,7 +169,7 @@ def test_bypass_session():
   logging.debug(resp)
   assert resp.get('rows')!=None
   rows = resp.get('rows')
-  for row in len(rows):
+  for row in range(0,len(rows)):
     assert rows[row].get('id') !=None
     assert rows[row].get('trx_type_source') !=None
     assert rows[row].get('jenis_trx') !=None
