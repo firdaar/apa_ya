@@ -63,20 +63,22 @@ def test_normal():
   resp = req.json()
   logging.debug(resp)
   print(resp)
-  assert resp.get('rows') !=None
-  assert resp.get('rows').get('id') !=None
-  assert resp.get('rows').get('trx_type_source') !=None
-  assert resp.get('rows').get('jenis_trx') !=None
-  assert resp.get('rows').get('industri') !=None
-  assert resp.get('rows').get('trx_type_target') !=None
-  assert resp.get('rows').get('biller_target') !=None
-  assert resp.get('rows').get('trx_type_source_desc') !=None
-  assert resp.get('rows').get('channel_source') !=None
-  assert resp.get('rows').get('nom_min') !=None
-  assert resp.get('rows').get('nom_max') !=None
-  assert resp.get('rows').get('fee_perorangan') !=None
-  assert resp.get('rows').get('fee_super_agen') !=None
-  assert resp.get('rows').get('biaya_loket') !=None
+  assert resp.get('rows')!=None
+  rows = resp.get('rows')
+  for row in rows.count():
+    assert resp.get('row').get('id') !=None
+    assert resp.get('row').get('trx_type_source') !=None
+    assert resp.get('row').get('jenis_trx') !=None
+    assert resp.get('row').get('industri') !=None
+    assert resp.get('row').get('trx_type_target') !=None
+    assert resp.get('row').get('biller_target') !=None
+    assert resp.get('row').get('trx_type_source_desc') !=None
+    assert resp.get('row').get('channel_source') !=None
+    assert resp.get('row').get('nom_min') !=None
+    assert resp.get('row').get('nom_max') !=None
+    assert resp.get('row').get('fee_perorangan') !=None
+    assert resp.get('row').get('fee_super_agen') !=None
+    assert resp.get('row').get('biaya_loket') !=None
   assert resp.get('count')!=None
 
 
@@ -165,18 +167,20 @@ def test_bypass_session():
   req = requests.post(http_endpoint, json=json.loads(post_data))
   resp = req.json()
   logging.debug(resp)
-  assert resp.get('rows') !=None
-  assert resp.get('rows').get('id') !=None
-  assert resp.get('rows').get('trx_type_source') !=None
-  assert resp.get('rows').get('jenis_trx') !=None
-  assert resp.get('rows').get('industri') !=None
-  assert resp.get('rows').get('trx_type_target') !=None
-  assert resp.get('rows').get('biller_target') !=None
-  assert resp.get('rows').get('trx_type_source_desc') !=None
-  assert resp.get('rows').get('channel_source') !=None
-  assert resp.get('rows').get('nom_min') !=None
-  assert resp.get('rows').get('nom_max') !=None
-  assert resp.get('rows').get('fee_perorangan') !=None
-  assert resp.get('rows').get('fee_super_agen') !=None
-  assert resp.get('rows').get('biaya_loket') !=None
+  assert resp.get('rows')!=None
+  rows = resp.get('rows')
+  for row in rows.count():
+    assert resp.get('row').get('id') !=None
+    assert resp.get('row').get('trx_type_source') !=None
+    assert resp.get('row').get('jenis_trx') !=None
+    assert resp.get('row').get('industri') !=None
+    assert resp.get('row').get('trx_type_target') !=None
+    assert resp.get('row').get('biller_target') !=None
+    assert resp.get('row').get('trx_type_source_desc') !=None
+    assert resp.get('row').get('channel_source') !=None
+    assert resp.get('row').get('nom_min') !=None
+    assert resp.get('row').get('nom_max') !=None
+    assert resp.get('row').get('fee_perorangan') !=None
+    assert resp.get('row').get('fee_super_agen') !=None
+    assert resp.get('row').get('biaya_loket') !=None
   assert resp.get('count')!=None
