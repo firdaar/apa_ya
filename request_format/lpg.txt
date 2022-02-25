@@ -12,28 +12,6 @@
 	"staff_id": "BNIAG50299",
 	"username": "BNIAG50299"
 }
-{
-	"error": false,
-	"code": "00",
-	"message": "Harga berhasil ditambah.",
-	"data": {
-		"retailer_id": "000020",
-		"retailer_name": "Yoo Seung Ho",
-		"price": "20000",
-		"effective_date": "26-10-2018",
-		"retailer_phone": "081234567820",
-		"retailer_email": "seungho@email.com",
-		"pin_transaksi": "12345",
-		"channel_id": "AGEN46",
-		"agent_id": "810736",
-		"staff_id": "BNIAG50299",
-		"username": "BNIAG50299",
-		"count": "1",
-		"status_detail": "1",
-		"status_detail_message": "",
-		"error_num": false
-	}
-}
 
 /lpgUpdateHarga
 {
@@ -49,30 +27,6 @@
 	"agent_id": "810736",
 	"staff_id": "BNIAG50299",
 	"username": "BNIAG50299"
-}
-{
-	"error": false,
-	"code": "00",
-	"message": "Harga berhasil diubah.",
-	"data": {
-		"retailer_name": "CV SEMOGA KAYA 22222222222",
-		"price": "10250",
-		"effective_date": "27-10-2018",
-		"retailer_phone": "081212345677",
-		"retailer_email": "semoga.kaya@gmail.com",
-		"pin_transaksi": "12345",
-		"price_id": "104",
-		"retailer_id": "120351810736027",
-		"channel_id": "AGEN46",
-		"agent_id": "810736",
-		"staff_id": "BNIAG50299",
-		"username": "BNIAG50299",
-		"action": "UPDATE",
-		"SPECIAL_CONDITION": "sure",
-		"count": "1",
-		"status_detail": "1",
-		"status_detail_message": ""
-	}
 }
 
 /lpgDeleteHarga
@@ -90,30 +44,6 @@
 	"staff_id": "BNIAG50299",
 	"username": "BNIAG50299"
 }
-{
-	"error": false,
-	"code": "00",
-	"message": "Harga berhasil dihapus.",
-	"data": {
-		"pin_transaksi": "12345",
-		"retailer_name": "Mitsuha",
-		"price": "1500",
-		"effective_date": "25-10-2018",
-		"retailer_phone": "08819092007",
-		"retailer_email": "mitsuha@gmail.com",
-		"price_id": "107",
-		"retailer_id": "000007",
-		"channel_id": "AGEN46",
-		"agent_id": "810736",
-		"staff_id": "BNIAG50299",
-		"username": "BNIAG50299",
-		"action": "DELETE",
-		"SPECIAL_CONDITION": "sure",
-		"count": "1",
-		"status_detail": "1",
-		"status_detail_message": ""
-	}
-}
 
 /lpgInquiryAgent
 {
@@ -121,17 +51,97 @@
 	"username": "BNIAG50299",
 	"agent_id": "8107"
 }
+
+/lpgUploadHarga
 {
-	"code": "00",
-	"message": "Agent ditemukan.",
-	"data": {
+	"channel_id": "AGEN46",
+	"username": "BNIAG50299",
+	"staff_id": "BNIAG50299",
+	"agent_id": "810736",
+	"filename": "810736_04_26102018.xlsx",
+	"filepath": "C:\\\\xampp\\\\htdocs\\\\lakupandai\\\\public/assets/uploads/lpg/810736_04_26102018.xlsx",
+	"filesize": "11406",
+	"data": [{
+		"retailer_id": "000021",
+		"retailer_name": "Lee Jin Ki",
+		"price": "1500",
+		"effective_date": "29-10-2018",
+		"retailer_phone": "081234567891",
+		"retailer_email": "onew@email.com",
+		"BULK_ACTION": "true",
+		"MAINTENANCE_HARGA_PANGKALAN_ID": 70,
+		"channel_id": "AGEN46",
 		"agent_id": "810736",
-		"agent_name": "Sdr ALI  MAHMUD",
-		"phone_num": "628567707986",
-		"account_num": "113183485",
-		"provinsi": "Jawa Timur",
-		"kabupaten": "Kab Jember",
-		"notif_sms": "1",
-		"agent_email": "Anjelika.Hutapea@bni.co.id "
-	}
+		"staff_id": "BNIAG50299"
+	}, {
+		"retailer_id": "000022",
+		"retailer_name": "Kim Jong Hyun",
+		"price": "1000",
+		"effective_date": "29-10-2018",
+		"retailer_phone": "081234567892",
+		"retailer_email": "jonghyun@email.com",
+		"BULK_ACTION": "true",
+		"MAINTENANCE_HARGA_PANGKALAN_ID": 70,
+		"channel_id": "AGEN46",
+		"agent_id": "810736",
+		"staff_id": "BNIAG50299"
+	}, {
+		"retailer_id": "000023",
+		"retailer_name": "Kim Ki Bum",
+		"price": "5500",
+		"effective_date": "29-10-2018",
+		"retailer_phone": "081234567893",
+		"retailer_email": "key@email.com",
+		"BULK_ACTION": "true",
+		"MAINTENANCE_HARGA_PANGKALAN_ID": 70,
+		"channel_id": "AGEN46",
+		"agent_id": "810736",
+		"staff_id": "BNIAG50299"
+	}, {
+		"retailer_id": "000024",
+		"retailer_name": "Choi Min Ho",
+		"price": "47500",
+		"effective_date": "29-10-2018",
+		"retailer_phone": "081234567894",
+		"retailer_email": "minho@email.com",
+		"BULK_ACTION": "true",
+		"MAINTENANCE_HARGA_PANGKALAN_ID": 70,
+		"channel_id": "AGEN46",
+		"agent_id": "810736",
+		"staff_id": "BNIAG50299"
+	}, {
+		"retailer_id": "000025",
+		"retailer_name": "Lee Tae Min",
+		"price": "130900",
+		"effective_date": "29-10-2018",
+		"retailer_phone": "081234567895",
+		"retailer_email": "taemin@email.com",
+		"BULK_ACTION": "true",
+		"MAINTENANCE_HARGA_PANGKALAN_ID": 70,
+		"channel_id": "AGEN46",
+		"agent_id": "810736",
+		"staff_id": "BNIAG50299"
+	}]
+}
+
+/lpgViewLaporan
+{
+	"start_date": "2018-10-19",
+	"end_date": "2018-10-26",
+	"limit": "0",
+	"offset": "0",
+	"username": "BNIAG50299"
+}
+
+/lpgDownloadLaporan
+{
+	"laporan_id": "70",
+	"username": "BNIAG50299"
+}
+
+/lpgGetHarga
+{
+	"channel_id ": "AGEN46",
+	"agent_id ": "810736 ",
+	"page ": "1"
 }
