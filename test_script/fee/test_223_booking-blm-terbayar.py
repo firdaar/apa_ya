@@ -64,20 +64,23 @@ def test_normal():
   req = requests.post(http_endpoint, json=json.loads(post_data))
   resp = req.json()
   logging.debug(resp)
+  print(resp)
   assert resp.get('rows')!=None
-  assert resp.get('rows').get('transaksi_id')!=None
-  assert resp.get('rows').get('kode_mitra')!=None
-  assert resp.get('rows').get('kode_cabang')!=None
-  assert resp.get('rows').get('kode_loket')!=None
-  assert resp.get('rows').get('datetime')!=None
-  assert resp.get('rows').get('industri')!=None
-  assert resp.get('rows').get('trx_name')!=None
-  assert resp.get('rows').get('flag_fee_loket')!=None
-  assert resp.get('rows').get('jumlah_transaksi')!=None
-  assert resp.get('rows').get('pendapatan_per_transaksi')!=None
-  assert resp.get('rows').get('total_pendapatan')!=None
-  assert resp.get('rows').get('status')!=None
-  assert resp.get('rows').get('via')!=None
+  rows = resp.get('rows')
+  for row in rows.count():
+    assert resp.get('row').get('transaksi_id')!=None
+    assert resp.get('row').get('kode_mitra')!=None
+    assert resp.get('row').get('kode_cabang')!=None
+    assert resp.get('row').get('kode_loket')!=None
+    assert resp.get('row').get('datetime')!=None
+    assert resp.get('row').get('industri')!=None
+    assert resp.get('row').get('trx_name')!=None
+    assert resp.get('row').get('flag_fee_loket')!=None
+    assert resp.get('row').get('jumlah_transaksi')!=None
+    assert resp.get('row').get('pendapatan_per_transaksi')!=None
+    assert resp.get('row').get('total_pendapatan')!=None
+    assert resp.get('row').get('status')!=None
+    assert resp.get('row').get('via')!=None
   assert resp.get('footer') !=None
   assert resp.get('footer').get('jumlah_transaksi_cr')!=None
   assert resp.get('footer').get('jumlah_transaksi_db')!=None
@@ -179,19 +182,21 @@ def test_bypass_session():
   resp = req.json()
   logging.debug(resp)
   assert resp.get('rows')!=None
-  assert resp.get('rows').get('transaksi_id')!=None
-  assert resp.get('rows').get('kode_mitra')!=None
-  assert resp.get('rows').get('kode_cabang')!=None
-  assert resp.get('rows').get('kode_loket')!=None
-  assert resp.get('rows').get('datetime')!=None
-  assert resp.get('rows').get('industri')!=None
-  assert resp.get('rows').get('trx_name')!=None
-  assert resp.get('rows').get('flag_fee_loket')!=None
-  assert resp.get('rows').get('jumlah_transaksi')!=None
-  assert resp.get('rows').get('pendapatan_per_transaksi')!=None
-  assert resp.get('rows').get('total_pendapatan')!=None
-  assert resp.get('rows').get('status')!=None
-  assert resp.get('rows').get('via')!=None
+  rows = resp.get('rows')
+  for row in rows.count():
+    assert resp.get('row').get('transaksi_id')!=None
+    assert resp.get('row').get('kode_mitra')!=None
+    assert resp.get('row').get('kode_cabang')!=None
+    assert resp.get('row').get('kode_loket')!=None
+    assert resp.get('row').get('datetime')!=None
+    assert resp.get('row').get('industri')!=None
+    assert resp.get('row').get('trx_name')!=None
+    assert resp.get('row').get('flag_fee_loket')!=None
+    assert resp.get('row').get('jumlah_transaksi')!=None
+    assert resp.get('row').get('pendapatan_per_transaksi')!=None
+    assert resp.get('row').get('total_pendapatan')!=None
+    assert resp.get('row').get('status')!=None
+    assert resp.get('row').get('via')!=None
   assert resp.get('footer') !=None
   assert resp.get('footer').get('jumlah_transaksi_cr')!=None
   assert resp.get('footer').get('jumlah_transaksi_db')!=None
