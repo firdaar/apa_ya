@@ -66,7 +66,7 @@ def test_normal():
   logging.debug(resp)
   assert resp.get('rows')!=None
   rows = resp.get('rows')
-  for row in len(rows):
+  for row in range(0,len(rows)):
     assert rows[row].get('transaksi_id')!=None
     assert rows[row].get('kode_mitra')!=None
     assert rows[row].get('kode_cabang')!=None
@@ -182,7 +182,7 @@ def test_bypass_session():
   logging.debug(resp)
   assert resp.get('rows')!=None
   rows = resp.get('rows')
-  for row in len(rows):
+  for row in range(0,len(rows)):
     assert rows[row].get('transaksi_id')!=None
     assert rows[row].get('kode_mitra')!=None
     assert rows[row].get('kode_cabang')!=None
