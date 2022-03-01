@@ -83,7 +83,7 @@ def test_normal():
     assert Data[newData].get('ip_address') == None
     assert Data[newData].get('id_pangkalan') != None
     assert Data[newData].get('index_status') != None
-  assert countData
+  assert countData != None
   
   
 def test_abnormal_error_soa():
@@ -183,5 +183,5 @@ def test_bypass_session():
     assert Data[newData].get('ip_address') == None
     assert Data[newData].get('id_pangkalan') != None
     assert Data[newData].get('index_status') != None
-  assert countData
+  assert countData != None
 
